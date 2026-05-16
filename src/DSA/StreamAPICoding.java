@@ -67,12 +67,12 @@ public class StreamAPICoding {
                 .filter(e -> e.getValue() > 1)
                 .map(r -> r.getKey())
                 .collect(Collectors.toSet());
-        System.out.println(duplicateNums);
+        System.out.println("Duplicates : "+duplicateNums);
 
         Set<Integer> seen = new HashSet<>();
         Set<Integer> duplicates = numbers5.stream().filter(i -> !seen.add(i))
                         .collect(Collectors.toSet());
-        System.out.println(duplicates);
+        System.out.println("Duplicates : "+ duplicates);
     }
 
     private static void mactchingString(List<String> strings) {

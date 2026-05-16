@@ -1,6 +1,7 @@
 package DesignPatterns.Command;
 
-import java.util.logging.Logger;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Client -> Invoker -> Command -> Receiver
@@ -11,6 +12,15 @@ import java.util.logging.Logger;
 public class Client {
 
     public static void main(String[] args) {
+
+        String s1 = new String("hello");
+        String s2 = "hello";
+
+        Set<String> hs = new HashSet<>();
+        hs.add(s1);
+        hs.add(s2);
+        System.out.println(hs.size());
+
         Light livingRoomLight = new Light();
         RemoteControl remoteControl = new RemoteControl();
         Command commandON = new LightOnCommand(livingRoomLight);

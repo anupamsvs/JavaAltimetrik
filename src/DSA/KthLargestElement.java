@@ -3,7 +3,7 @@ package DSA;
 import java.util.PriorityQueue;
 
 public class KthLargestElement {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] arr = {3,5,1,8,10,16};
         int k = 3;
         System.out.println(findKthLargest(arr, k));

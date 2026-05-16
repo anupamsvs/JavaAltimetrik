@@ -1,6 +1,8 @@
+package Multithreading;
+
 import Concepts.Animal;
-import Multithreading.EvenOddWithTwoThreads;
-import Multithreading.Printer;
+
+import java.util.concurrent.CompletableFuture;
 
 public class Main {
     public static void main(String[] args) {
